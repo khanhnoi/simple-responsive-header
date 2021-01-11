@@ -17,7 +17,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: center;
     padding: 15px 100px;
     background: rgb(52, 46, 63);
 }
@@ -90,4 +90,71 @@ header .search .fa-search {
     color: #fff;
     border-right: 1px solid #fff;
     padding-right: 10px;
+}
+
+
+/* banner */
+
+.banner {
+    min-height: 100vh;
+    padding: 200px 100px 100px 100px;
+    background: rgb(72 68 88);
+    /* color: #fff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .conntent {
+    max-width: 700px;
+}
+
+.banner .content h2 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.banner .content p {
+    margin-top: 1em;
+    font-size: 1em;
+    color: #fff;
+}
+
+.banner .content a {
+    margin-top: 20px;
+    padding: 8px 20px;
+    display: inline-block;
+    background: #fff;
+    color: rgb(72 68 88);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.banner .content a:hover {}
+
+.banner .image {
+    max-width: 400px;
+    margin-left: 20px;
+    filter: invert(1);
+}
+
+
+/* responsive */
+
+@media(max-width: 991px) {
+    header {
+        padding: 15px 30px;
+        flex-direction: column;
+    }
+    .banner {
+        padding: 155px 65px 65px 65px;
+        flex-direction: column-reverse;
+    }
+    .banner .content h2 {
+        font-size: 2em;
+    }
+    .banner .image {
+        max-width: 80%;
+        margin-left: 0;
+    }
 }
